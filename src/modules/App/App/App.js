@@ -4,11 +4,11 @@
 import React from 'react';
 
 import { Header, Footer } from 'modules/App';
-import { ProjectListItem } from 'modules/Projects';
+import { ProjectList } from 'modules/Projects';
 import Button from 'components/Button';
 import './App.css';
 
-const listItem = { title: 'Test' };
+const projects = [{ id: 1, title:'Project 1' }, { id: 2, title:'Project 2' }, { id: 3, title:'Project 3' }];
 
 const App = () => {
 	return (
@@ -23,7 +23,7 @@ const App = () => {
 					<br />
 					<Button text='Click Me!' onClick={() => console.log('Button clicked')} />
 				</p>
-				<ProjectListItem project={ listItem } />
+				<ProjectList projects={ projects } />
 			</section>
 			<Footer />
 		</section>

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const ProjectListItem = ({ project }) => {
 	return (
-		<div>{project.title}</div>
+		<li>{project.title}</li>
 	);
 };
 

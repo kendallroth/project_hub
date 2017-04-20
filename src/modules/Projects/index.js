@@ -2,5 +2,6 @@
 //Purpose:  Export Projects module components
 
 import ProjectListItem from './ProjectListItem';
+import ProjectList from './ProjectList';
 
-export { ProjectListItem };
+export { ProjectListItem, ProjectList };
