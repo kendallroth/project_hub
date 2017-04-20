@@ -4,30 +4,35 @@
 import React from 'react';
 
 import { Header, Footer } from 'modules/App';
-import { ProjectList } from 'modules/Projects';
+import Sidebar from 'modules/Sidebar';
 import Button from 'components/Button';
 import './App.css';
 
-const projects = [{ id: 1, title:'Project 1' }, { id: 2, title:'Project 2' }, { id: 3, title:'Project 3' }];
+class App extends React.Component {
+	constructor(props) {
+		super(props);
 
-const App = () => {
-	return (
-		<section className="app">
-			<Header />
-			<section className="app__body">
-				<div className="app__description">
-					<p>Manage personal development projects on a high level without detail clutter</p>
-				</div>
-				<p className="app__intro">
-					To get started, edit <code>src/App.js</code> and save to reload!
-					<br />
-					<Button text='Click Me!' onClick={() => console.log('Button clicked')} />
-				</p>
-				<ProjectList projects={ projects } />
+		this.state = {
+			projects: [{ id: 1, title: 'Project 1' }, { id: 2, title: 'Project 2' }, { id: 3, title: 'Project 3' }]
+		};
+	}
+
+	render() {
+		return (
+			<section className="app">
+				<Header />
+				<section className="app__body">
+					<div className="app__description">
+						<p>Manage personal development projects on a high level without detail clutter</p>
+						<br />
+						<Button text='Click Me!' onClick={() => console.log('Button clicked')} />
+					</div>
+					<Sidebar projects={this.state.projects} />
+				</section>
+				<Footer />
 			</section>
-			<Footer />
-		</section>
-	);
+		);
+	}
 }
 
 export default App;
