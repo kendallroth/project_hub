@@ -15,11 +15,5 @@ ReactDOM.render(
 
 //Enable hot reloading with the 'create-react-app' template
 if (module.hot) {
-	module.hot.accept('./modules/App', () => {
-		const NextApp = require('./modules/App').default;
-		ReactDOM.render(
-			<NextApp />,
-			document.getElementById('root')
-		);
-	})
+	module.hot.accept();
 }
