@@ -4,9 +4,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './ProjectListItem.css';
+
 const ProjectListItem = ({ project }) => {
 	return (
-		<li>{project.title}</li>
+		<li className='project-list__item'>{project.title}</li>
 	);
 };
 

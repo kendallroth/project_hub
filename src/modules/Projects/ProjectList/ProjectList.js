@@ -5,6 +5,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { ProjectListItem } from 'modules/Projects';
+import './ProjectList.css';
 
 //Map the projects to a list of ProjectListItem components
 const listProjects = (projects) => {
@@ -15,7 +16,7 @@ const listProjects = (projects) => {
 
 const ProjectList = ({ projects }) => {
 	return (
-		<ul>
+		<ul className='project-list'>
 			{ listProjects(projects) }
 		</ul>
 	);
