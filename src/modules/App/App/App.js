@@ -4,8 +4,11 @@
 import React from 'react';
 
 import { Header, Footer } from 'modules/App';
+import { ProjectListItem } from 'modules/Projects';
 import Button from 'components/Button';
 import './App.css';
+
+const listItem = { title: 'Test' };
 
 const App = () => {
 	return (
@@ -20,6 +23,7 @@ const App = () => {
 					<br />
 					<Button text='Click Me!' onClick={() => console.log('Button clicked')} />
 				</p>
+				<ProjectListItem project={ listItem } />
 			</section>
 			<Footer />
 		</section>
