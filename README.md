@@ -11,6 +11,7 @@ It seems like most project management tools require far to much detail to quickl
   - Store high level information (almost meta level)
 
 ## Steps
+- [x] Determine project structure
 - [ ] Use React to manage project information
 - [ ] Switch to Redux to manage state information
 - [ ] Create a Node/MongoDB API to store project information
