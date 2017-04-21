@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 
 import './ProjectListItem.css';
 
-const ProjectListItem = ({ project }) => {
+const ProjectListItem = ({ project, onClick }) => {
 	return (
-		<li className='project-list__item'>{project.title}</li>
+		<li className='project-list__item' onClick={onClick}>{project.title}</li>
 	);
 };
 

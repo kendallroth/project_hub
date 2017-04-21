@@ -7,10 +7,18 @@ import PropTypes from 'prop-types';
 import { ProjectListItem } from 'modules/Projects';
 import './ProjectList.css';
 
+const onProjectClick = (projectId) => {
+	console.log(projectId);
+};
+
 //Map the projects to a list of ProjectListItem components
 const listProjects = (projects) => {
 	return projects.map((project) => {
-		return <ProjectListItem key={project.id} project={project} />;
+		return <ProjectListItem
+			key={project.id}
+			project={project}
+			onClick={() => onProjectClick(project.id)}
+		/>;
 	});
 };
 
