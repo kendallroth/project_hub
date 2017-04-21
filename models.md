@@ -10,6 +10,7 @@ Models for each data element necessary for the application.
 	"description": "Initial project to demonstrate application features",
 	"summary": "",
 	"status": "FINISHED",
+	"starred": true,
 	"category": {
 		"id": "9as8df71i23ja9sdf8",
 		"name": "Development",
