@@ -6,6 +6,7 @@
 - Added basic component and modules for future implementation reference
 - Planned the basic app structure and designed the main screens
 - Added model documentation once structure was determined
+- Moved some documentation to project wiki on GitHub
 
 **April 19, 2017**
 - Create project from `create-react-app` template and add to GitHub
