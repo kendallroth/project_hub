@@ -3,11 +3,11 @@
 ## Structure
 The app is divided into components and modules top-level directories, where components are reusable (agnostic) pieces and modules are larger feature sets. A module will contain several sub-components which are not reusable. All elements necessary for a component/module will be stored inside the component directory, including style files and other resources.
 
-## Environment
+### Environment
 In order to access components with an absolute path (rather than relative), the start script must include a `NODE_PATH` reference:
 - `"start": "NODE_PATH=./src react-scripts start"`
 
-## Modularization
+### Modularization
 Modules must expose their functionality and components through a defined public API, which shold be an `index.js` file in the module directory. Individual components should also include an `index.js` file to enable directory shortcuts (ie. `src/components/ProjectList` instead of `src/components/ProjectList/ProjectList`). Components **must** have a default export, but modules may optionally only use named exports. All reducers and actions will be stored within the module directory, possibly as a single file (Duck pattern). Finally, container and presentational components may optionally be merged into the same file, as the presentational component is rarely used by its own (away from the container).
 
 ## Usage
@@ -26,7 +26,7 @@ export { ProjectItem };
 import ProjectList, { ProjectItem } from 'modules/Projects';
 ```
 
-## Sample Structure
+### Sample Structure
 
 ```
 src/
