@@ -1,7 +1,11 @@
 .app__container {
-
+	/* Flex container for the app */
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
 }
 
 .app__body {
-	
+	/* Fill remaining vertical height */
+	flex:1 ;
 }
