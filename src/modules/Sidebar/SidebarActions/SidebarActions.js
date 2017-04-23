@@ -3,12 +3,16 @@
 
 import React from 'react';
 
+import SearchBar from 'components/SearchBar';
+import Button from 'components/Button';
 import './SidebarActions.css';
 
 const SidebarActions = () => {
 	return (
-		<div className="sidebar__filter-bar">
-			SidebarActions
+		<div className='sidebar__actions'>
+			<SearchBar />
+			<Button text='^' />
+			<Button text='+' />
 		</div>
 	);
 }

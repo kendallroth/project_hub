@@ -19,9 +19,9 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<section className="app__container">
+			<section className='app__container'>
 				<Header />
-				<section className="app__body">
+				<section className='app__body'>
 					<Sidebar projects={this.state.projects} />
 					<Context />
 				</section>
