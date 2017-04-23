@@ -6,15 +6,11 @@ More information on the [Project Wiki](https://github.com/kendallroth/project_hu
 ## Description
 It seems like most project management tools require far to much detail to quickly and easily manage. I eventually switched to using a simple Google Doc to track the high-level information about each development project I am currently working on. For this use case I don't need in depth tracking &mdash; in fact, I don't want it at all. Since I am also in the process of learning React/Redux I decided to combine the need with the knowledge and start working on an extremely simple web app to track high level project information.
 
-## Features
-- Manage a list of projects
-  - Show current status (`Pending`, `In Progress`, `Completed`)
-- Update individual projects
-  - Store high level information (almost meta level)
-
 ## Steps
 - [x] Determine project structure
-- [ ] Use React to manage project information
+- [ ] Create app mockups
+- [ ] Implement app structure in React
+- [ ] Use React to manage some project information
 - [ ] Switch to Redux to manage state information
 - [ ] Create a Node/MongoDB API to store project information
 - [ ] Integrate the API into the app
@@ -25,3 +21,16 @@ It seems like most project management tools require far to much detail to quickl
   - `create-react-app` template
 - Node/Express
 - MongoDB
+
+## Development
+
+```bash
+# Fork/clone the project
+git clone https://github.com/kendallroth/project_hub.git
+
+# Move into directory and install npm packages
+npm install
+
+# Start development server (with hot reloading)
+npm run start
+```
