@@ -6,5 +6,6 @@ export default App;
 
 import Header from './Header';
 import Footer from './Footer';
+import Context from './Context';
 
-export { Header, Footer };
+export { Header, Footer, Context };

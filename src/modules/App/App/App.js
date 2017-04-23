@@ -3,7 +3,7 @@
 
 import React from 'react';
 
-import { Header, Footer } from 'modules/App';
+import { Header, Footer, Context } from 'modules/App';
 import Sidebar from 'modules/Sidebar';
 import './App.css';
 
@@ -22,6 +22,7 @@ class App extends React.Component {
 				<Header />
 				<section className="app__body">
 					<Sidebar projects={this.state.projects} />
+					<Context />
 				</section>
 				<Footer />
 			</section>

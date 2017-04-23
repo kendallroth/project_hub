@@ -14,7 +14,7 @@ class Sidebar extends React.Component {
 
 	render() {
 		return (
-			<section className='sidebar'>
+			<section className='app__sidebar'>
 				<ProjectList projects={this.props.projects} />
 			</section>
 		);

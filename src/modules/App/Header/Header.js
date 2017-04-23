@@ -1,4 +1,4 @@
-//File:     /src/modules/App/Header/Footer.js
+//File:     /src/modules/App/Header/Header.js
 //Purpose:  App Header presentational component
 
 import React from 'react';

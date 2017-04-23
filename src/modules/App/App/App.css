@@ -6,6 +6,9 @@
 }
 
 .app__body {
+	/* Flex container for app body */
+	display: flex;
+
 	/* Fill remaining vertical height */
 	flex:1 ;
 }
