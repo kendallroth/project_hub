@@ -3,8 +3,9 @@
 
 import React from 'react';
 
-import { Header, Footer, Context } from 'modules/App';
+import { Header, Footer } from 'modules/App';
 import Sidebar from 'modules/Sidebar';
+import Context from 'modules/Context';
 import './App.css';
 
 class App extends React.Component {

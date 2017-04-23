@@ -7,9 +7,9 @@ import './Context.css';
 
 const Context = () => {
 	return (
-		<div className="app__context">
+		<section className="app__context">
 			Context
-		</div>
+		</section>
 	);
 }
 
