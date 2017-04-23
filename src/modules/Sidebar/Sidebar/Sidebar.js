@@ -5,18 +5,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { ProjectList } from 'modules/Projects';
-import { FilterBar } from 'modules/Sidebar';
+import { SidebarActions } from 'modules/Sidebar';
 import './Sidebar.css';
 
 class Sidebar extends React.Component {
 	constructor(props) {
 		super(props);
+
+		this.state = {};
 	}
 
 	render() {
 		return (
 			<section className='app__sidebar'>
-				<FilterBar />
+				<SidebarActions />
 				<ProjectList projects={this.props.projects} />
 			</section>
 		);

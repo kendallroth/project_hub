@@ -4,6 +4,6 @@
 import Sidebar from './Sidebar';
 export default Sidebar;
 
-import FilterBar from './FilterBar';
+import SidebarActions from './SidebarActions';
 
-export { FilterBar };
+export { SidebarActions };
