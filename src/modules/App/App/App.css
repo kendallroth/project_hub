@@ -1,22 +1,7 @@
-.app {
+.app__container {
 
 }
 
 .app__body {
-  padding: 1.5rem;
-}
-
-.app__body p {
-  margin: 0;
-}
-
-.app__description {
-  margin-bottom: 1rem;
-  font-size: large;
-  font-weight: bold;
-}
-
-.app__intro {
-  font-size: large;
-  text-align: center;
+	
 }

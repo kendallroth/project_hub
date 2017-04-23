@@ -5,7 +5,6 @@ import React from 'react';
 
 import { Header, Footer } from 'modules/App';
 import Sidebar from 'modules/Sidebar';
-import Button from 'components/Button';
 import './App.css';
 
 class App extends React.Component {
@@ -19,14 +18,9 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<section className="app">
+			<section className="app__container">
 				<Header />
 				<section className="app__body">
-					<div className="app__description">
-						<p>Manage personal development projects on a high level without detail clutter</p>
-						<br />
-						<Button text='Click Me!' onClick={() => console.log('Button clicked')} />
-					</div>
 					<Sidebar projects={this.state.projects} />
 				</section>
 				<Footer />
