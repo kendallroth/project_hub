@@ -4,3 +4,7 @@
 import Sidebar from './Sidebar';
 
 export default Sidebar;
+
+import FilterBar from './FilterBar';
+
+export { FilterBar };

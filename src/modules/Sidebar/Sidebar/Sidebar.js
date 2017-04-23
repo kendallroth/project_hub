@@ -5,6 +5,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { ProjectList } from 'modules/Projects';
+import { FilterBar } from 'modules/Sidebar';
 import './Sidebar.css';
 
 class Sidebar extends React.Component {
@@ -15,6 +16,7 @@ class Sidebar extends React.Component {
 	render() {
 		return (
 			<section className='app__sidebar'>
+				<FilterBar />
 				<ProjectList projects={this.props.projects} />
 			</section>
 		);
