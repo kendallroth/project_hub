@@ -1,7 +1,7 @@
 # project_hub
 Manage personal development projects on a high level without detail clutter.
 
-More information on the [Project Wiki](https://github.com/kendallroth/project_hubi/wiki)
+More information on the [Project Wiki](https://github.com/kendallroth/project_hub/wiki)
 
 ## Description
 It seems like most project management tools require far to much detail to quickly and easily manage. I eventually switched to using a simple Google Doc to track the high-level information about each development project I am currently working on. For this use case I don't need in depth tracking &mdash; in fact, I don't want it at all. Since I am also in the process of learning React/Redux I decided to combine the need with the knowledge and start working on an extremely simple web app to track high level project information.
