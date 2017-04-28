@@ -19,6 +19,7 @@ class Sidebar extends React.Component {
 		//Bind class functions
 		this.onProjectsFilterTextChange = this.onProjectsFilterTextChange.bind(this);
 		this.onProjectsFilterClick = this.onProjectsFilterClick.bind(this);
+		this.getFilteredProjects = this.getFilteredProjects.bind(this);
 	}
 
 	render() {
@@ -29,7 +30,7 @@ class Sidebar extends React.Component {
 					onProjectsFilterTextChange={this.onProjectsFilterTextChange}
 					onProjectsFilterClick={this.onProjectsFilterClick}
 				/>
-				<ProjectList projects={this.props.projects} />
+				<ProjectList projects={this.getFilteredProjects()} />
 			</section>
 		);
 	}
@@ -39,8 +40,22 @@ class Sidebar extends React.Component {
 	}
 
 	onProjectsFilterTextChange(event) {
-		console.log(event.target.value);
+		//console.log(`Project Filter Value: ${event.target.value}`);
 		this.setState({ filterBarValue: event.target.value });
+	}
+
+	getFilteredProjects() {
+		const filterValue = this.state.filterBarValue.toLowerCase();
+		const projects = this.props.projects;
+
+		//Filter the list of projects if filter text has been provided
+		if (filterValue !== '') {
+			return projects.filter((project) => {
+				return project.title.toLowerCase().includes(filterValue) ? true : false;
+			});
+		} else {
+			return projects;
+		}
 	}
 }
 
