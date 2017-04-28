@@ -4,6 +4,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Log from 'utilities/Log';
 import { ProjectList } from 'modules/Projects';
 import { SidebarActions } from 'modules/Sidebar';
 import './Sidebar.css';
@@ -38,7 +39,7 @@ class Sidebar extends React.Component {
 	}
 
 	onProjectsFilterClick(event) {
-		console.log('Project List Filter clicked');
+		Log.trace('Project List Filter clicked');
 	}
 
 	onProjectsFilterTextChange(event) {
@@ -61,7 +62,7 @@ class Sidebar extends React.Component {
 	}
 
 	onProjectsAddClick() {
-		console.log('Add Project clicked');
+		Log.trace('Add Project clicked');
 	}
 }
 

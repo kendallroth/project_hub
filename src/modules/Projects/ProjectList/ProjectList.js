@@ -4,11 +4,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Log from 'utilities/Log';
 import { ProjectListItem } from 'modules/Projects';
 import './ProjectList.css';
 
 const onProjectClick = (project) => {
-	console.log(`Project Item clicked: [${project.id}] ${project.title}`);
+	Log.trace(`Project Item clicked: [${project.id}] ${project.title}`);
 };
 
 //Map the projects to a list of ProjectListItem components
