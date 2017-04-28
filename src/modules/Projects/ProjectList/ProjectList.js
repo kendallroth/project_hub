@@ -12,7 +12,7 @@ const onProjectClick = (projectId) => {
 };
 
 //Map the projects to a list of ProjectListItem components
-const listProjects = (projects) => {
+const listProjects = (projects = []) => {
 	return projects.map((project) => {
 		return <ProjectListItem
 			key={project.id}
