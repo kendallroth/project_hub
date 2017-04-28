@@ -7,7 +7,7 @@ import './Header.css';
 
 const Header = () => {
 	return (
-		<div className="app__header">
+		<div className='app__header'>
 			<h2>ProjectHub</h2>
 		</div>
 	);

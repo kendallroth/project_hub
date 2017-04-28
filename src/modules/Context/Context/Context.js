@@ -7,7 +7,7 @@ import './Context.css';
 
 const Context = () => {
 	return (
-		<section className="app__context">
+		<section className='app__context'>
 			Context
 		</section>
 	);

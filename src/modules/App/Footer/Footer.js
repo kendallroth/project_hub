@@ -7,7 +7,7 @@ import './Footer.css';
 
 const Footer = () => {
 	return (
-		<div className="app__footer">
+		<div className='app__footer'>
 			&copy; Kendall Roth
 		</div>
 	);
