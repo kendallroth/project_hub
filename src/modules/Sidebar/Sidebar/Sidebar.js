@@ -12,16 +12,35 @@ class Sidebar extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {};
+		this.state = {
+			filterBarValue: ''
+		};
+
+		//Bind class functions
+		this.onProjectsFilterTextChange = this.onProjectsFilterTextChange.bind(this);
+		this.onProjectsFilterClick = this.onProjectsFilterClick.bind(this);
 	}
 
 	render() {
 		return (
 			<section className='app__sidebar'>
-				<SidebarActions />
+				<SidebarActions
+					filterBarValue={this.state.filterBarValue}
+					onProjectsFilterTextChange={this.onProjectsFilterTextChange}
+					onProjectsFilterClick={this.onProjectsFilterClick}
+				/>
 				<ProjectList projects={this.props.projects} />
 			</section>
 		);
+	}
+
+	onProjectsFilterClick(event) {
+		console.log('Project List Filter clicked');
+	}
+
+	onProjectsFilterTextChange(event) {
+		console.log(event.target.value);
+		this.setState({ filterBarValue: event.target.value });
 	}
 }
 

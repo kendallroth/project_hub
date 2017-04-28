@@ -3,15 +3,18 @@
 
 import React from 'react';
 
-import SearchBar from 'components/SearchBar';
+import FilterBar from 'components/FilterBar';
 import Button from 'components/Button';
 import './SidebarActions.css';
 
-const SidebarActions = () => {
+const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjectsFilterClick }) => {
 	return (
 		<div className='sidebar__actions'>
-			<SearchBar />
-			<Button text='^' />
+			<FilterBar
+				filterBarValue={filterBarValue}
+				onFilterTextChange={onProjectsFilterTextChange}
+				onFilterButtonClick={onProjectsFilterClick}
+			/>
 			<Button text='+' />
 		</div>
 	);
