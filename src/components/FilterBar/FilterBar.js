@@ -10,9 +10,9 @@ import './FilterBar.css';
 
 const FilterBar = ({ filterBarValue, onFilterTextChange, onFilterButtonClick }) => {
 	return (
-		<div className='filter-bar'>
-			<SearchBar value={filterBarValue} placeholder='Filter...' onChange={onFilterTextChange} />
-			<Button text='v' onClick={onFilterButtonClick} />
+		<div className='filter-bar input-group'>
+			<SearchBar classes='input-group-field' value={filterBarValue} placeholder='Filter...' onChange={onFilterTextChange} />
+			<Button type='icon' classes='input-group-button' icon='fi-filter' onClick={onFilterButtonClick} />
 		</div>
 	);
 };

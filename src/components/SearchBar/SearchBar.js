@@ -6,13 +6,14 @@ import PropTypes from 'prop-types';
 
 import './SearchBar.css';
 
-const SearchBar = ({ value, placeholder = 'Search...', onChange }) => {
+const SearchBar = ({ classes, value, placeholder = 'Search...', onChange }) => {
 	return (
-		<input type='text' value={value} className='search-bar' placeholder={placeholder} onChange={onChange} />
+		<input type='text' value={value} className={`search-bar ${classes}`} placeholder={placeholder} onChange={onChange} />
 	);
 }
 
 SearchBar.propTypes = {
+	classes: PropTypes.string,
 	value: PropTypes.string,
 	placeholder: PropTypes.string,
 	onChange: PropTypes.func
