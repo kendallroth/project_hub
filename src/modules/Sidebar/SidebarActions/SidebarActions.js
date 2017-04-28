@@ -15,7 +15,7 @@ const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjects
 				onFilterTextChange={onProjectsFilterTextChange}
 				onFilterButtonClick={onProjectsFilterClick}
 			/>
-			<IconButton classes='button--add' icon='fi-plus' onClick={onProjectsAddClick} />
+			<IconButton type='round' classes='button--add' icon='fi-plus' onClick={onProjectsAddClick} />
 		</div>
 	);
 }
