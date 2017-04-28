@@ -1,4 +1,14 @@
 .sidebar__actions {
+	display: flex;
 	padding: 0.75rem;
 	border-bottom: 1px solid lightgrey;
+}
+
+/* Remove bottom margin caused by Foundation ".button" */
+.sidebar__actions .button {
+	margin: 0;
+}
+
+.sidebar__actions .button--add {
+	margin-left: 0.75rem;
 }

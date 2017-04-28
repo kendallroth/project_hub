@@ -4,7 +4,7 @@
 import React from 'react';
 
 import FilterBar from 'components/FilterBar';
-import Button from 'components/Button';
+import IconButton from 'components/IconButton';
 import './SidebarActions.css';
 
 const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjectsFilterClick }) => {
@@ -15,7 +15,7 @@ const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjects
 				onFilterTextChange={onProjectsFilterTextChange}
 				onFilterButtonClick={onProjectsFilterClick}
 			/>
-			<Button text='+' />
+			<IconButton classes='button--add' icon='fi-plus' />
 		</div>
 	);
 }

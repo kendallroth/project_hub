@@ -6,31 +6,15 @@ import PropTypes from 'prop-types'
 
 import './Button.css';
 
-const Button = ({ type = 'text', classes = '', icon = '', text, onClick }) => {
-	let innerHTML = '';
-
-	switch(type) {
-		case 'icon':
-			innerHTML = <i className={icon}></i>;
-			break;
-		case 'both':
-			innerHTML = <span><i className={icon} style={{marginRight: '0.25rem'}}></i>{text}</span>;
-			break;
-		case 'text':
-		default:
-			innerHTML = text;
-			break;
-	}
-
+const Button = ({ classes = '', text, onClick }) => {
 	return (
-		<button className={`button ${classes}`} onClick={onClick}>{innerHTML}</button>
+		<button className={`button ${classes}`} onClick={onClick}>{text}</button>
 	)
 }
 
 Button.propTypes = {
 	classes: PropTypes.string,
-	icon: PropTypes.string,
-	text: PropTypes.string,
+	text: PropTypes.string.isrequired,
 	onClick: PropTypes.func
 };
 

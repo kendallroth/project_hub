@@ -1,7 +1,4 @@
+/* Remove bottom margin caused by Foundation ".input-group" */
 .filter-bar {
-	margin: 0;
-}
-
-.filter-bar .button {
-	margin: 0;
+	margin: 0 !important;
 }
