@@ -13,7 +13,8 @@ const ProjectListItem = ({ project, onClick }) => {
 };
 
 ProjectListItem.propTypes = {
-	project: PropTypes.object.isRequired
+	project: PropTypes.object.isRequired,
+	onClick: PropTypes.func
 };
 
 export default ProjectListItem;

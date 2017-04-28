@@ -7,8 +7,8 @@ import PropTypes from 'prop-types';
 import { ProjectListItem } from 'modules/Projects';
 import './ProjectList.css';
 
-const onProjectClick = (projectId) => {
-	console.log(projectId);
+const onProjectClick = (project) => {
+	console.log(`Project Item clicked: [${project.id}] ${project.title}`);
 };
 
 //Map the projects to a list of ProjectListItem components
@@ -17,7 +17,7 @@ const listProjects = (projects = []) => {
 		return <ProjectListItem
 			key={project.id}
 			project={project}
-			onClick={() => onProjectClick(project.id)}
+			onClick={() => onProjectClick(project)}
 		/>;
 	});
 };
