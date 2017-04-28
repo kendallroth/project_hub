@@ -12,7 +12,7 @@ const FilterBar = ({ filterBarValue, onFilterTextChange, onFilterButtonClick }) 
 	return (
 		<div className='filter-bar'>
 			<SearchBar value={filterBarValue} placeholder='Filter...' onChange={onFilterTextChange} />
-			<Button text='v' icon='filter' onClick={onFilterButtonClick} />
+			<Button text='v' onClick={onFilterButtonClick} />
 		</div>
 	);
 };
