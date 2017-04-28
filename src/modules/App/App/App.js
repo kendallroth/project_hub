@@ -6,6 +6,7 @@ import React from 'react';
 import { Header, Footer } from 'modules/App';
 import Sidebar from 'modules/Sidebar';
 import Context from 'modules/Context';
+import Log from 'utilities/Log';
 import './App.css';
 
 class App extends React.Component {
@@ -15,6 +16,10 @@ class App extends React.Component {
 		this.state = {
 			projects: [{ id: 1, title: 'Project 1' }, { id: 2, title: 'Project 2' }, { id: 3, title: 'Project 3' }]
 		};
+
+		//Set the app log level
+		Log.setLogLevel('debug');
+		Log.trace('App constructed and ready to render initially');
 	}
 
 	render() {
