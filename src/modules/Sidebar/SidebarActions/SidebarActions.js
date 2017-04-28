@@ -7,7 +7,7 @@ import FilterBar from 'components/FilterBar';
 import IconButton from 'components/IconButton';
 import './SidebarActions.css';
 
-const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjectsFilterClick }) => {
+const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjectsFilterClick, onProjectsAddClick }) => {
 	return (
 		<div className='sidebar__actions'>
 			<FilterBar
@@ -15,7 +15,7 @@ const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjects
 				onFilterTextChange={onProjectsFilterTextChange}
 				onFilterButtonClick={onProjectsFilterClick}
 			/>
-			<IconButton classes='button--add' icon='fi-plus' />
+			<IconButton classes='button--add' icon='fi-plus' onClick={onProjectsAddClick} />
 		</div>
 	);
 }

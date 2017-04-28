@@ -20,6 +20,7 @@ class Sidebar extends React.Component {
 		this.onProjectsFilterTextChange = this.onProjectsFilterTextChange.bind(this);
 		this.onProjectsFilterClick = this.onProjectsFilterClick.bind(this);
 		this.getFilteredProjects = this.getFilteredProjects.bind(this);
+		this.onProjectsAddClick = this.onProjectsAddClick.bind(this);
 	}
 
 	render() {
@@ -29,6 +30,7 @@ class Sidebar extends React.Component {
 					filterBarValue={this.state.filterBarValue}
 					onProjectsFilterTextChange={this.onProjectsFilterTextChange}
 					onProjectsFilterClick={this.onProjectsFilterClick}
+					onProjectsAddClick={this.onProjectsAddClick}
 				/>
 				<ProjectList projects={this.getFilteredProjects()} />
 			</section>
@@ -56,6 +58,10 @@ class Sidebar extends React.Component {
 		} else {
 			return projects;
 		}
+	}
+
+	onProjectsAddClick() {
+		console.log('Add Project clicked');
 	}
 }
 
