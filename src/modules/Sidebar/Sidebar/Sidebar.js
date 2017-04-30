@@ -33,7 +33,10 @@ class Sidebar extends React.Component {
 					onProjectsFilterClick={this.onProjectsFilterClick}
 					onProjectsAddClick={this.onProjectsAddClick}
 				/>
-				<ProjectList projects={this.getFilteredProjects()} />
+				<ProjectList
+					projects={this.getFilteredProjects()}
+					onProjectItemClick={this.props.onProjectItemClick}
+				/>
 			</section>
 		);
 	}
@@ -43,8 +46,10 @@ class Sidebar extends React.Component {
 	}
 
 	onProjectsFilterTextChange(event) {
-		//console.log(`Project Filter Value: ${event.target.value}`);
-		this.setState({ filterBarValue: event.target.value });
+		//Log.trace(`Project Filter Value: ${event.target.value}`);
+		this.setState({
+			filterBarValue: event.target.value
+		});
 	}
 
 	getFilteredProjects() {

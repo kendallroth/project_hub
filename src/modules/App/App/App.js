@@ -14,8 +14,11 @@ class App extends React.Component {
 		super(props);
 
 		this.state = {
-			projects: [{ id: 1, title: 'Project 1' }, { id: 2, title: 'Project 2' }, { id: 3, title: 'Project 3' }]
+			projects: [{ id: 1, title: 'Project 1' }, { id: 2, title: 'Project 2' }, { id: 3, title: 'Project 3' }],
+			project: {}
 		};
+
+		this.onProjectItemClick = this.onProjectItemClick.bind(this);
 
 		//Set the app log level
 		Log.setLogLevel('trace');
@@ -27,12 +30,19 @@ class App extends React.Component {
 			<section className='app__container'>
 				<Header />
 				<section className='app__body'>
-					<Sidebar projects={this.state.projects} />
-					<Context />
+					<Sidebar projects={this.state.projects} onProjectItemClick={this.onProjectItemClick} />
+					<Context project={this.state.project} />
 				</section>
 				<Footer />
 			</section>
 		);
+	}
+
+	onProjectItemClick(project) {
+		Log.trace(`Set clicked Project: ${JSON.stringify(project)}`);
+		this.setState({
+			project: project
+		});
 	}
 }
 

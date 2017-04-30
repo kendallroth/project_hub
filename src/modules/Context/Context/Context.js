@@ -5,10 +5,10 @@ import React from 'react';
 
 import './Context.css';
 
-const Context = () => {
+const Context = ({ project }) => {
 	return (
 		<section className='app__context'>
-			Context
+			<h2>[{project.id}] {project.title}</h2>
 		</section>
 	);
 }
