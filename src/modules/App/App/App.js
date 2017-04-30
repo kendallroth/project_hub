@@ -13,9 +13,11 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 
+		const projects = [{ id: 1, title: 'Project 1' }, { id: 2, title: 'Project 2' }, { id: 3, title: 'Project 3' }];
+
 		this.state = {
-			projects: [{ id: 1, title: 'Project 1' }, { id: 2, title: 'Project 2' }, { id: 3, title: 'Project 3' }],
-			project: {}
+			projects: projects,
+			project: projects[0]
 		};
 
 		this.onProjectItemClick = this.onProjectItemClick.bind(this);
