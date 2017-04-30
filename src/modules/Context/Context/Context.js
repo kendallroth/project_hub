@@ -9,7 +9,7 @@ import './Context.css';
 const Context = ({ project }) => {
 	return (
 		<section className='app__context'>
-			<ContextActions />
+			<ContextActions project={project} />
 			<h2>{project.title}</h2>
 		</section>
 	);

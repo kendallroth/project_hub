@@ -2,13 +2,15 @@
 //Purpose:  ContextActions presentational component
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import IconButton from 'components/IconButton';
+import ActionBar from 'components/ActionBar';
 import './ContextActions.css';
 
-const ContextActions = () => {
+const ContextActions = ({ project }) => {
 	return (
-		<div className='context__actions actions-bar'>
+		<ActionBar className='context__actions'>
 			<div className='button-group actions--left'>
 				<IconButton icon='fi-pencil' />
 				<IconButton icon='fi-archive' />
@@ -19,8 +21,12 @@ const ContextActions = () => {
 				<IconButton icon='fi-download' />
 				<IconButton icon='fi-star' />
 			</div>
-		</div>
+		</ActionBar>
 	);
+};
+
+ContextActions.propTypes = {
+	project: PropTypes.object
 };
 
 export default ContextActions;
