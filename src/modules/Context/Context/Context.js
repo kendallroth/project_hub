@@ -8,7 +8,7 @@ import './Context.css';
 const Context = ({ project }) => {
 	return (
 		<section className='app__context'>
-			<h2>[{project.id}] {project.title}</h2>
+			<h2>{project.title}</h2>
 		</section>
 	);
 }
