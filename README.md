@@ -8,9 +8,10 @@ It seems like most project management tools require far to much detail to quickl
 
 ## Steps
 - [x] Determine project structure
-- [ ] Create app mockups
+- [x] Create app mockups
 - [ ] Implement app structure in React
 - [ ] Use React to manage some project information
+- [ ] Use Higher Order Components (_HOC_) for conditional rendering
 - [ ] Switch to Redux to manage state information
 - [ ] Create a Node/MongoDB API to store project information
 - [ ] Integrate the API into the app
