@@ -9,7 +9,7 @@ import './SidebarActions.css';
 
 const SidebarActions = ({ filterBarValue, onProjectsFilterTextChange, onProjectsFilterClick, onProjectsAddClick }) => {
 	return (
-		<div className='sidebar__actions'>
+		<div className='sidebar__actions actions-bar'>
 			<FilterBar
 				filterBarValue={filterBarValue}
 				onFilterTextChange={onProjectsFilterTextChange}

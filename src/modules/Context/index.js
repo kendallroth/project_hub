@@ -3,3 +3,7 @@
 
 import Context from './Context';
 export default Context;
+
+import ContextActions from './ContextActions';
+
+export { ContextActions };

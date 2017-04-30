@@ -12,3 +12,15 @@
 	/* Fill remaining vertical height */
 	flex:1 ;
 }
+
+/* Generic actions bar */
+.actions-bar {
+	display: flex;
+	flex-direction: row;
+	padding: 0.75rem;
+}
+
+.actions-bar .button { margin-bottom: 0; }
+.actions-bar .button-group { margin-bottom: 0; }
+.actions-bar .actions--left { margin-right: auto; }
+.actions-bar .actions--right { margin-left: auto; }

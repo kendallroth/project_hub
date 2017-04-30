@@ -3,11 +3,13 @@
 
 import React from 'react';
 
+import { ContextActions } from 'modules/Context';
 import './Context.css';
 
 const Context = ({ project }) => {
 	return (
 		<section className='app__context'>
+			<ContextActions />
 			<h2>{project.title}</h2>
 		</section>
 	);
